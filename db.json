@@ -1,0 +1,73 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "board": [
+    {
+      "title": "accounts",
+      "todos": [
+        {
+          "task": "cmbmj",
+          "status": "todo"
+        },
+        {
+          "task": "cmbmj",
+          "status": "doing"
+        },
+        {
+          "task": "cmbmj",
+          "status": "done"
+        },
+        {
+          "task": "cmbmj",
+          "status": "done"
+        },
+        {
+          "task": "cmbmj",
+          "status": "doing"
+        },
+        {
+          "task": "cmbmj",
+          "status": "todo"
+        },
+        {
+          "task": "cmbmj",
+          "status": "doing"
+        },
+        {
+          "task": "",
+          "status": "todo"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "title": "banking",
+      "todos": [
+        {
+          "task": "debit cart",
+          "status": "todo"
+        },
+        {
+          "task": "creadit  cart",
+          "status": "doing"
+        }
+      ],
+      "id": 2
+    }
+  ]
+}
