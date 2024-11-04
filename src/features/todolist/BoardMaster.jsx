@@ -15,7 +15,7 @@ export default function BoardMaster() {
           {
         isLoading && <b>Loading...</b>
        }
-      <div className='d-flex flex-wrap justify-content-evenly'>
+      <div className='d-flex flex-wrap justify-content-between'>
        {
         !isLoading && data ?.map((todolist)=>{
          return <BoardCard todolist={todolist}></BoardCard>

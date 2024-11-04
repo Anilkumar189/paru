@@ -2,6 +2,7 @@
 import { useAddTodolistMutation, useGetAllTodoListsQuery, useLazyGetAllTodoListsQuery} from '../../services/boardApi'
 import { Outlet } from 'react-router-dom'
 import BoardCard from './BoardCard'
+import Sidebar from './Sidebar'
 
  
  export default function Board() {
@@ -18,16 +19,21 @@ import BoardCard from './BoardCard'
   }
  
    return (
-     <div>
-       <div><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        + add Todolist
+     <div className='d-flex'>
+       <div className='w-25 vh-100 p-4 border border-info'id="d3">
+        <div className='d-flex justify-content-between align-item-center'>
+          <div className='fs-2'>Todolists</div>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        + Add Todolist
         </button>
+        </div>
+        
+        <Sidebar></Sidebar>
       </div>
+<div className='w-75 p-3'>
+<Outlet></Outlet>
 
-       
-{/* <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button> */}
+</div>
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -47,7 +53,6 @@ import BoardCard from './BoardCard'
   </div>
 </div>
        
-       <Outlet></Outlet>
      
       
          

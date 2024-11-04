@@ -9,13 +9,13 @@ await deleteTodolistFn(todolist.id)
  }
   // console.log(todolist)
   return (
-<div class="card w-25 m-4" >
+<div class="card w-25 m-4" id="d2">
   <div class="card-header d-flex justify-content-between">
     {todolist.title.toUpperCase()}
     <i class="bi bi-trash3 text-danger fs-3" onClick={()=>{deleteTodolistFn(todolist.id)}}></i>
     
     </div>
-  <div class="card-body d-flex flex-column justify-content-between">
+  <div class="card-body d-flex flex-column justify-content-between" >
   <h5 class="card-title">Total:{todolist.todos?.length}</h5>
 <ul style={{height:"100px",overflow:"auto"}}>
 
