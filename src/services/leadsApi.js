@@ -17,5 +17,4 @@ export const leadsApi = createApi({
 
 export const {
   useLoginMutation,
-  
 } = leadsApi

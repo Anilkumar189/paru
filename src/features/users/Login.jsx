@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import { useLoginMutation } from '../../services/leadsApi';
 
 export default function Login() {
- var[loginFn]= useLoginMutation()
+ var[loginFn]= useLoginMutation();
   return (
     <div>
         <h1>Login</h1>

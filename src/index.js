@@ -11,9 +11,10 @@ import {
   Route,
   Link,
 } from "react-router-dom";
-import Login from './features/users/users/Login';
-import Singup from './features/users/users/Singup';
- 
+import {Login} from './features/users/Login'
+import {Singup} from './features/users/Singup'
+
+
 const router = createBrowserRouter([
 {
   path:"/",
@@ -21,15 +22,17 @@ const router = createBrowserRouter([
   children:[
     {
       path:"/",
-      element:<Login></Login>
+      element: <Login></Login>,
     },
     {
       path:"/Singup",
-      element:<Singup></Singup>
+      element:<Singup></Singup>,
     }
   ]
 }
 ])
+import Login from './features/users/Login';
+import Singup from './features/users/Singup';
 
 createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />
